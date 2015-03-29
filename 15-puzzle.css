@@ -1,0 +1,39 @@
+#puzzle-container {
+  background-color: yellow;
+  height: 503px;
+  margin-top:10px;
+  width: 600px;
+}
+.container,#draggable{
+  border: 1px solid blue;
+  float: left;
+  height: 124px;
+  width: 148px;
+}
+.container div{
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+#div1{
+  background-color: green;
+  left: 100px;
+}
+#draggable{
+  background-color: grey;
+}
+.container {
+  text-align: center;
+  position: relative;
+}
+#reset {
+  margin-left: 195px;
+}
+#finish {
+  margin-left: 92px;
+}
+#page-wrapper{
+  left: 200px;
+  position: relative;
+  top: 0;
+}
