@@ -1,4 +1,3 @@
-console.log("loading js");
 var puzzleManger;
 puzzleManger = {
   sequenceArray: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
@@ -74,11 +73,20 @@ puzzleManger = {
     //find the +-1 and +-4 div ID's 
     try {
       puzzleManger.prev1 = document.getElementById(puzzleManger.currentElement).parentNode.previousElementSibling.getAttribute("id");
-
-      puzzleManger.prev4 = document.getElementById(puzzleManger.currentElement).parentNode.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("id");
-
+	} catch (ex) {
+      console.log("exception is :", ex);
+    }
+	try {
+	puzzleManger.prev4 = document.getElementById(puzzleManger.currentElement).parentNode.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("id");
+	} catch (ex) {
+      console.log("exception is :", ex);
+    }
+	try {
       puzzleManger.succ1 = document.getElementById(puzzleManger.currentElement).parentNode.nextElementSibling.getAttribute("id");
- 
+	} catch (ex) {
+      console.log("exception is :", ex);
+    }
+	try {
       puzzleManger.succ4 = document.getElementById(puzzleManger.currentElement).parentNode.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.getAttribute("id");
     } catch (ex) {
       console.log("exception is :", ex);
